@@ -95,6 +95,8 @@ vim.pack.add({
             "https://github.com/nvim-telescope/telescope-ui-select.nvim",
         }
     }, 
+    { src = "https://github.com/vague2k/vague.nvim" },
+    { src = "https://github.com/srcery-colors/srcery-vim" },
 })
 
 
@@ -348,6 +350,7 @@ keymap.set('n', '<leader>gp', ':Neogit push<CR>', { silent = true, desc = 'push 
 vim.lsp.enable({"lua_ls", "clangd", "gopls"})
 
 
+require "vague".setup({ transparent = true })
 require "jb".setup({ transparent = true })
-vim.cmd("colorscheme jb")
+vim.cmd("colorscheme srcery")
 vim.cmd(":hi statusline guibg=NONE")
