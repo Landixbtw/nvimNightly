@@ -100,6 +100,7 @@ vim.pack.add({
     }, 
     { src = "https://github.com/vague2k/vague.nvim" },
     { src = "https://github.com/srcery-colors/srcery-vim" },
+    { src = "https://github.com/kvrohit/rasmus.nvim" },
 })
 
 
@@ -355,5 +356,5 @@ vim.lsp.enable({"lua_ls", "clangd", "gopls"})
 
 require "vague".setup({ transparent = true })
 require "jb".setup({ transparent = true })
-vim.cmd("colorscheme srcery")
+vim.cmd("colorscheme rasmus")
 vim.cmd(":hi statusline guibg=NONE")
