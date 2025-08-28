@@ -29,6 +29,9 @@ vim.opt.inccommand = 'split'
 vim.opt.swapfile = false
 vim.opt.winborder = "rounded"
 
+-- Gives the orientation line at X characters
+vim.opt.colorcolumn = '80'
+
 -- keymaps
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
